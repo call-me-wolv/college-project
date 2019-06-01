@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../includes/style.css">
+    <style>
+        a:link, a:visited {
+        background-color:bisque;
+        color: red;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    
+    a:hover, a:active {
+        background-color: green;
+        color: white;
+    }</style>
+      
+    </head>
+    <body >
+        <a href="logout.php" >Logout</a>
+        <h1>
+           <b> Organic Store Management System</b>
+        </h1>
+        <ul >
+            <!-- <li>check availablity</li> -->
+            <!-- <div >
+                    <form  action="includes/check_item.php" method="POST">
+                      <div class="container">
+                        <label for="uemail" ><b>Item name:</b></label>
+                        <br>
+                        <input type="text" placeholder="Enter Item name" name="iname" required>
+                        <button type="submit">search</button> 
+                      </div>
+                    </form>
+                  </div> -->
+           
+            <li>Find store address near you</li>
+            <div >
+                    <form  action="../includes/find_store.php" method="POST">
+                      <div class="container">
+                        <label for="uemail" s><b>find:</b></label>
+                        <br>
+                        <input type="text" placeholder="Enter city name bengaluru/chennai/mumbai" name="cityname" required>
+                        <input type="text" placeholder="Enter area name jaynagar/jpnagar/kuvempunagar/srinivaspura/ameednagar" name="areaname" required>
+                        <button type="submit">search</button> 
+                      </div>
+                    </form>
+                  </div>
+
+                  <li>Order Online</li>
+                  <div >
+                    <br>
+                      <a href="../html/order.php" >ORDER</a>   
+                        </div>
+
+        </ul>
+       
+
+    </body>
+</html>
